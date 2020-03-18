@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import mentorIconURL from './mentor/mitch.jpg';
+import mentorInsetIconURL from './mentor/mitch-small.jpg';
+
 export default [
     {
         name: (
@@ -317,5 +320,27 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+
+    {
+        name: 'Scratch Mentor',
+        extensionId: 'mentor',
+        collaborator: 'Me',
+        iconURL: mentorIconURL,
+        insetIconURL: mentorInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Ask a Mentor for help"
+                description=""
+                id="gui.extension.mentor.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        helpLink: 'https://scratch.mit.edu/'
     }
 ];
