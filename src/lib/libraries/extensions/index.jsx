@@ -54,7 +54,52 @@ import microbitMoreInsetIconURL from './microbitMore/microbitMore-small.svg';
 import microbitMoreConnectionIconURL from './microbitMore/microbitMore-illustration.svg';
 import microbitMoreConnectionSmallIconURL from './microbitMore/microbitMore-small.svg';
 
+import lightplayIconURL from './lightplay/lightplay.png';
+import lightplayInsetIconURL from './lightplay/lightplay-small.png';
+
 export default [
+    {
+        name: 'Light Play',
+        extensionId: 'lightplay',
+        collaborator: 'Me',
+        iconURL: lightplayIconURL,
+        insetIconURL: lightplayInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Play Light with Light Play"
+                description=""
+                id="gui.extension.lightplay.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        helpLink: 'https://scratch.mit.edu/'
+    },
+    {
+        name: 'Scratch Mentor',
+        extensionId: 'mentor',
+        collaborator: 'Me',
+        iconURL: mentorIconURL,
+        insetIconURL: mentorInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Ask a Mentor for help"
+                description=""
+                id="gui.extension.mentor.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        bluetoothRequired: false,
+        internetConnectionRequired: true,
+        launchPeripheralConnectionFlow: false,
+        useAutoScan: false,
+        helpLink: 'https://scratch.mit.edu/'
+    },
     {
         name: 'micro:bit More',
         extensionId: 'microbitMore',
@@ -355,27 +400,5 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
-    },
-
-    {
-        name: 'Scratch Mentor',
-        extensionId: 'mentor',
-        collaborator: 'Me',
-        iconURL: mentorIconURL,
-        insetIconURL: mentorInsetIconURL,
-        description: (
-            <FormattedMessage
-                defaultMessage="Ask a Mentor for help"
-                description=""
-                id="gui.extension.mentor.description"
-            />
-        ),
-        featured: true,
-        disabled: false,
-        bluetoothRequired: false,
-        internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: false,
-        useAutoScan: false,
-        helpLink: 'https://scratch.mit.edu/'
     }
 ];
