@@ -56,6 +56,8 @@ import microbitMoreConnectionSmallIconURL from './microbitMore/microbitMore-smal
 
 import lightplayIconURL from './lightplay/lightplay.png';
 import lightplayInsetIconURL from './lightplay/lightplay-small.png';
+import lightplayConnectionIconURL from './lightplay/lightplay-illustration.png';
+import lightplayConnectionSmallIconURL from './lightplay/lightplay-small.png';
 
 export default [
     {
@@ -73,10 +75,19 @@ export default [
         ),
         featured: true,
         disabled: false,
-        bluetoothRequired: false,
-        internetConnectionRequired: true,
-        launchPeripheralConnectionFlow: false,
+        bluetoothRequired: true,
+        internetConnectionRequired: false,
+        launchPeripheralConnectionFlow: true,
         useAutoScan: false,
+        connectionIconURL: lightplayConnectionIconURL,
+        connectionSmallIconURL: lightplayConnectionSmallIconURL,
+        connectingMessage: (
+            <FormattedMessage
+                defaultMessage="Connecting"
+                description="Message to help people connect to their micro:bit lightplay."
+                id="gui.extension.lightplay.connectingMessage"
+            />
+        ),
         helpLink: 'https://scratch.mit.edu/'
     },
     {
